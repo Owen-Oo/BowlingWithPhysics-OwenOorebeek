@@ -5,6 +5,7 @@ public class inputManager : MonoBehaviour
 {
     public UnityEvent<Vector2> OnMove = new UnityEvent<Vector2>();
     public UnityEvent OnSpacePressed = new UnityEvent();
+    public UnityEvent OnResetPressed = new UnityEvent();
 
     // Update is called once per frame
     void Update()
@@ -17,5 +18,8 @@ public class inputManager : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
             input += Vector2.right;
         OnMove?.Invoke(input);
+
+        if (Input.GetKeyDown(KeyCode.R))
+            OnResetPressed?.Invoke();
     }
 }

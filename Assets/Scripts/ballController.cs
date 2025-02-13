@@ -13,16 +13,13 @@ public class ballController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Grabbing reference to rigidbody
+        
         ballRB = GetComponent<Rigidbody>();
 
-        //Add listener to OnSpacePressed event
-        //Calls LaunchBall function when space is pressed
         inputManager.OnSpacePressed.AddListener(LaunchBall);
 
-        transform.parent = ballAnchor;
-        transform.position = ballAnchor.position; 
-        ballRB.isKinematic = true;
+        
+        ResetBall();
     }
 
     private void LaunchBall()
@@ -34,5 +31,14 @@ public class ballController : MonoBehaviour
         ballRB.isKinematic = false;
         ballRB.AddForce(launchIndicator.forward * force, ForceMode.Impulse);
         launchIndicator.gameObject.SetActive(false);
+    }
+
+    public void ResetBall()
+    {
+        isBallLaunched = false;
+        transform.parent = ballAnchor;
+        transform.position = ballAnchor.position;
+        ballRB.isKinematic = true;
+        launchIndicator.gameObject.SetActive(true);
     }
 }
