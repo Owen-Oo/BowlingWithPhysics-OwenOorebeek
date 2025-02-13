@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 3729968}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 1.1, z: -3.31}
+  m_LocalPosition: {x: 0.04, y: 1.1, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -219,6 +219,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputManager: {fileID: 241196620}
   speed: 20
+--- !u!1 &50326941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50326945}
+  - component: {fileID: 50326942}
+  m_Layer: 6
+  m_Name: Left Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &50326942
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50326941}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &50326945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50326941}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 2.5, z: -3}
+  m_LocalScale: {x: 1, y: 5, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &139350090
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +286,7 @@ GameObject:
   - component: {fileID: 139350092}
   - component: {fileID: 139350091}
   - component: {fileID: 139350096}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bowling Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +436,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5907396880454283056, guid: a4484d86fc7fd9b468ea20cf741e74ed, type: 3}
       propertyPath: m_Name
-      value: Gutter (1)
+      value: Left Gutter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907396880454283056, guid: a4484d86fc7fd9b468ea20cf741e74ed, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6865695338738145146, guid: a4484d86fc7fd9b468ea20cf741e74ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -568,7 +625,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2756825, y: -0.000000028647452, z: 0.000000008215981, w: 0.96124876}
-  m_LocalPosition: {x: 0.04, y: 6.1, z: -11.309999}
+  m_LocalPosition: {x: 0.04, y: 6.1, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1010,7 +1067,7 @@ Transform:
   m_GameObject: {fileID: 644682162}
   serializedVersion: 2
   m_LocalRotation: {x: 0.27568248, y: -0.000000028647449, z: 0.000000008215979, w: 0.96124876}
-  m_LocalPosition: {x: 0.04, y: 6.1, z: -11.309999}
+  m_LocalPosition: {x: 0.04, y: 6.1, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1153,7 +1210,7 @@ GameObject:
   - component: {fileID: 1137896324}
   - component: {fileID: 1137896327}
   - component: {fileID: 1137896326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,6 +1285,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137896323}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1393820512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393820514}
+  - component: {fileID: 1393820513}
+  m_Layer: 6
+  m_Name: Right Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1393820513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393820512}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1393820514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393820512}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 2.5, z: -3}
+  m_LocalScale: {x: 1, y: 5, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1646738220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1600,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5907396880454283056, guid: a4484d86fc7fd9b468ea20cf741e74ed, type: 3}
       propertyPath: m_Name
-      value: Gutter
+      value: Right Gutter
       objectReference: {fileID: 0}
     - target: {fileID: 6865695338738145146, guid: a4484d86fc7fd9b468ea20cf741e74ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1552,3 +1662,5 @@ SceneRoots:
   - {fileID: 228995705}
   - {fileID: 3729969}
   - {fileID: 644682168}
+  - {fileID: 50326945}
+  - {fileID: 1393820514}

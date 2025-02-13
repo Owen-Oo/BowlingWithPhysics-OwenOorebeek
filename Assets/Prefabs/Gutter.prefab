@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6865695338738145146}
   - component: {fileID: 5444644108281446403}
   - component: {fileID: 2908016381118966380}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gutter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
